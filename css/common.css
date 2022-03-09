@@ -217,8 +217,8 @@ body:not(#home) main h2 span{
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 10;
-  bottom: 10;
+  right: 10px;
+  bottom: 10px;
   background: #dfd94d;
   opacity: 0.7;
   z-index: 2;
