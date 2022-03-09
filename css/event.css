@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+
+.eventWrap{
+    background: rgba(223,217,77,0.7);
+}
+.eventBox{
+    padding-top: 60px;
+}
+.eventBox:last-child{
+    padding-bottom: 60px;
+}
+.eventBox .inner{
+    background: #fff;
+    padding: 60px 30px;
+}
+.eventBox p img{
+    float: right;
+    width: 48%;
+    margin-left: 3%;
+}
+.eventDate{
+    display: inline-block;
+    padding-right: 20px;
+    color: #1e433c;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 125%;/*20px*/
+    border-bottom: 1px dotted;
+}
+h3{
+    color: #1e433c;
+    font-size: 150%;/*24px*/
+    margin-bottom: 30px;
+}
+h3 span{
+    display: block;
+}
+
+
+
+/*599px以下になったら表示が切り替わる*/
+
+@media screen and (max-width: 599px){
+	
+     .eventBox p img{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    p{
+    	font-size: 87.5%;
+    }
+    .eventDate{
+    	font-size: 100%
+    }
+	h3{
+    	font-size: 112.5%
+	}
+	
+    
+
+
+}

@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+
+h2{
+	font-size: 250%;/*40px*/
+	text-align: center;
+	color: #1e433c;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 2px 1px #fff;
+}
+h2 span{
+	display: block;
+	font-size: 40%;/*16px*/
+}
+
+.boder {
+	display: flex;
+	align-items: center; /* 垂直中心 */
+	justify-content: center; /* 水平中心 */
+}
+.boder:before, .boder:after {
+	border-top: 1px solid;
+	content: "";
+	width: 10%; /* 線の長さ */
+}
+.boder:before {
+	margin-right: 1rem; /* 文字の右隣 */
+}
+.boder:after {
+	margin-left: 1rem; /* 文字の左隣 */
+}
+
+
+/*--- mainvisual ---*/
+
+.mainVisualbox{
+	position: relative;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.mainLogo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 20%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.mainText{
+	position: absolute;
+	font-size: 225%;
+	text-align: right;
+	bottom: 5%;
+	right: 5%;
+	color: #fff;
+	text-shadow: 2px 2px 1px #000;
+	font-family: 'Zen Kaku Gothic New';
+	font-weight: 300;
+	line-height: 1.3;
+}
+
+/*mainvisual切り替え用*/
+.pcon{
+	display: block;
+}
+.spon{
+	display: none;
+}
+
+/*--- main slide ---*/
+/*slick setting1*/
+.slider{
+    margin: 0 auto;
+    width: 100%;
+}
+/*slick setting2*/
+.slider img{
+    height: 100%;
+    width: 100%;
+}
+/* ---------------- */
+
+.aboutWrap{
+	margin-top: 60px;
+}
+
+.aboutBox{
+	margin-top: 8vw;
+}
+.aboutBox:first-child{
+	margin-top: 0;
+}
+
+/* aboutの画像設定 */
+.aboutBox:nth-child(1){
+	background: url("../images/top/about1.jpg") no-repeat;
+	/* background-size: 50%; */
+}
+.aboutBox:nth-child(2){
+	background: url("../images/top/about2.jpg") no-repeat;
+	/* background-size: 50%; */
+}
+.aboutBox:nth-child(3){
+	background: url("../images/top/about4.jpg") no-repeat;
+	/* background-size: 50%; */
+}
+.aboutBox:nth-child(even){
+	background-position: top right;
+}
+.aboutBoxInner{
+	margin-left: auto;
+    width: 57%;
+	padding-right: 12px;
+    box-sizing: border-box;
+}
+.aboutBox:nth-child(even) .aboutBoxInner{
+	margin-left: 0;
+	margin-right: auto;
+}
+.aboutTtlWrap{
+	font-size: 175%;/*28px*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	padding-left: 3.4em;
+}
+.aboutBox:nth-child(even) .aboutTtlWrap{
+	padding: 0 6.4rem 0 0;
+	text-align: right;
+}
+.aboutNum{
+	font-size: 290%;
+	text-shadow: 3px 3px 1px #fff;
+	font-weight: 400;
+    font-style: italic;
+	color: #1E433C;
+}
+.aboutTtl{
+	background: linear-gradient(transparent 60%, rgba(223,217,77,0.9) 50%);
+	text-shadow: 3px 3px 1px #fff;
+	position: relative;
+    bottom: 2px;
+	padding: 0 40px 0 0;
+    margin-left: 0.5em;
+}
+.aboutText{
+	background: rgba(255,255,255,0.8);
+	padding: 40px 40px 15px 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+.aboutText:before {
+	position: absolute;
+    bottom: -14px;
+    right: -14px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dddbcb;
+    content: '';
+}
+.aboutTextInner:before,.aboutTextInner:after{
+    content: '';
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+.aboutTextInner:before {
+	background: url("../images/top/brackets_01.png") no-repeat ;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.aboutTextInner:after {
+	background: url("../images/top/brackets_02.png") no-repeat ;
+	background-size: 100%;
+	position: absolute;
+	bottom: -25px;
+    right: 10px;
+}
+
+
+.textRight{
+	text-align: right;
+}
+.info{
+	display: flex;
+	margin-top: 100px;
+	padding-bottom: 30px;
+}
+.infoBox{
+	position: relative;
+}
+.infoInner{
+	color: #fff;
+	text-shadow: 2px 2px 1px #000;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	font-size: 225%;/*36px*/
+	font-family: 'Raleway', sans-serif;
+}
+.info .infoBox:hover .infoInner{
+	color: #1e433c;
+	transition: 0.3s;
+}
+
+.info p img{
+	box-shadow: 5px 5px #1e433c;
+}
+.infoBox:first-child{
+	padding-right: 1%;
+}
+
+.info a:hover{
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+.event{
+	background: rgba(223,217,77,0.7);
+	padding: 60px 0;
+	margin-top: 60px;
+}
+.event .inner{
+	background: #fff;
+	padding: 40px 1%;
+}
+.event dl{
+	padding: 30px 10% 0 10%;
+}
+
+.event dl dt{
+	margin-bottom: 10px;
+	color: #1e433c;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	border-bottom: dotted 1px #1e433c;
+}
+.event dl dd{
+	margin-bottom: 30px;
+}
+
+
+/* view more　の指定 */
+
+.button{
+	text-align: right;
+}
+
+.button a {
+    display: inline-block;
+    position: relative;
+    width: 10em;
+    color: #333;
+    font-weight: 700;
+    background-color: #dfd94d;
+    transition: 0.3s;
+    padding: 3px 50px 2px 5px;
+    font-size: 87.5%;
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    }
+
+.button a::before {
+	content: '';
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1em;
+    transform: translateY(calc(-50% - 1px)) rotate(45deg);
+    width: 6px;
+    height: 1px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.button a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 1px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.button a:hover {
+  text-decoration: none;
+  background-color: #dfd94d6e;
+}
+
+.button a:hover::before,
+.button a:hover::after {
+  right: 0.5em;
+}
+
+
+.event .button{
+	text-align: right;
+	padding-right: 10%;
+}
+
+
+
+
+/*599px以下になったら表示が切り替わる*/
+
+@media screen and (max-width: 599px){
+
+	h2{
+		font-size: 200%;/*32px*/
+	}
+	h2 span{
+		font-size: 43.75%;/*14px*/
+	}
+	
+
+	.mainText{
+	font-size: 150%;/*24px*/
+	}
+	.mainLogo img{
+		width: 100%;
+	}
+
+	/*mainvisual切り替え用*/
+	.spon{
+		display: block;
+	}
+	.pcon{
+		display: none;
+	}
+	/*------*/
+
+	.aboutBox{
+		background-image: none!important;
+	}
+	.aboutBoxInner{
+		width: 100%;
+		padding-right: 0;
+	}
+	.aboutBoxInner .spon{
+		display: block;
+		text-align: center;
+	}
+	.aboutTtlWrap {
+		padding-left: 0;
+	}
+	h3{
+		font-size: 150%;/*24px*/
+	}
+	h3 .h3first{
+	font-size: 171.42%;/*40px*/
+	}
+	.aboutBox:nth-child(even) .aboutTtlWrap{
+		text-align: left;
+	}
+
+	.info{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.infoBox:first-child {
+		padding-right: 0;
+		margin-bottom: 30px;
+	}
+
+
+}
+
+

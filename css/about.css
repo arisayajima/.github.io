@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* about area */
+
+.aboutWrap h3{
+    background: rgba(223,217,77);
+    font-size: 125%;
+    display: inline-block;
+    padding: 5px 3em;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.aboutWrap section{
+    background: #fff;
+}
+.aboutWrap{
+    display: flex;
+}
+.abBox{
+    width: 49.5%;
+}
+.abBox:first-child{
+    margin-right: 1%;
+}
+.abBox ul{
+    padding: 15px;
+}
+.abBox ul li{
+    padding: 0 0 10px 1.5em;
+    position: relative;
+}
+
+/* チェックマーク */
+.abBox ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: 0;
+    width: 10px;
+    height: 5px;
+    border-left: 4px solid #dfd94d;
+    border-bottom: 4px solid #dfd94d;
+    transform: rotate(-45deg);
+}
+
+/* student area */
+.studentWrap{
+    font-family: 'Zen Kaku Gothic New';
+    font-weight: 500;
+    background: rgba(223,217,77,0.7);
+    padding: 60px 0;
+    margin-top: 100px;
+}
+.studentText {
+    background: rgba(255,255,255,0.7);
+    width: 80%;
+    padding: 60px 40px;
+    margin: auto;
+}
+.studentBox {
+    padding: 60px 0;
+}
+.studentBox:nth-child(2){
+    background: url("../images/about/student1.png") no-repeat top left;
+    background-size: 25%;
+}
+.studentBox:nth-child(3){
+    background: url("../images/about/student2.png") no-repeat top right;
+    background-size: 40%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 599px){
+    
+    .aboutWrap{
+        flex-direction: column;
+    }
+    .abBox{
+        width: 100%;
+        margin: 0;
+    }
+    .abBox p img{
+		margin: 0 auto;
+		display: block;
+    }
+	.abBox:first-child{
+		margin: 0 0 60px 0;	
+	}
+	.aboutWrap section{
+		max-width: 480px;
+		margin: auto;
+    }
+
+    .studentText {
+        width: 90%;
+        padding: 50px 40px;
+        margin: auto;
+    }
+    .studentBox {
+        padding: 40px 0;
+    }
+    .studentBox:nth-child(2){
+        background-size: 35vw;
+    }
+    .studentBox:nth-child(3){
+        padding-bottom: 0;
+        background-size: 55vw;
+    }
+    .studentWrap{
+        font-size: 87.5%;
+    }    
+    
+    
+}

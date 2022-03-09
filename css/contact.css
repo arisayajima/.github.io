@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+h3 {
+	text-align: center;
+	font-size: 125%;
+	color: #1e433c;
+	margin-bottom: 50px;
+}
+
+h3 span{
+    display: block;
+    font-size: 70%;
+    color: #c70606;
+}
+.topText {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    font-size: 125%;
+    margin: 60px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    width: 97%;
+    padding: 1em 1%;
+    border: 1px solid #B2B2B2;
+    margin: 0 auto;
+}
+
+input[type="submit"] {
+    width: 42.99%;
+    background: #1e433c;
+    border: 1px solid #1e433c;
+    color: #fff;
+    padding: 10px 1%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+input[type="submit"]:hover {
+    background: #fff;
+    color: #1e433c;
+    border: 1px solid #1e433c;
+    transition: 0.3s;
+}
+dl dt{
+    color: #1e433c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+dl span{
+    color: #c70606;
+
+}
+dl dd{
+    margin-bottom: 20px;
+}
+.contactBox{
+    background: rgba(223,217,77,0.7);
+    padding: 60px;
+}
+
+
+    /*599px以下になったら表示が切り替わる*/
+@media screen and (max-width: 599px){
+
+    .contactBox{
+        padding: 30px;
+    }
+    .topText {
+    	font-size: 87.5%
+    }
+
+    
+}

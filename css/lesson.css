@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+h3{
+	text-align: center;
+    font-size: 125%;
+    margin-bottom: 20px;
+}
+
+/* lesson area */
+.tabbox{
+	width: 100%;
+}
+.tabbox ul{
+	box-sizing: border-box;
+}
+/* タブ */
+.tabbox ul li{
+	float: left;
+    margin-right: 0.1%;
+	width: calc(99.4% / 7);
+}
+.tabbox ul li:last-child{
+    margin-right: 0;
+}
+.tabbox ul li a{
+	font-weight:bold;
+	color:#FFF;
+	text-decoration:none;
+	display:block;
+	padding:15px 0;
+	background: #dfd94d;
+	text-align: center;
+} 
+.tabbox ul li a:hover{
+	background:#dfd94d;
+	color:#FFF;
+}
+.tabbox ul li a.current{
+	background:#fff;
+	color: #dfd94d;
+}
+/* レッスン情報　中身 */
+#contents{
+	clear:both;
+	padding:30px 20px;
+	background:#fff;
+}
+.lessoninner{
+	display: flex;
+    border: 1px solid;
+    padding: 5px;
+    width: 70%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+}
+.lessoninner ul{
+	width: 60%;
+    padding-left: 10px;
+
+}
+.lessoninner p img{
+	border-radius: 3px;
+
+}
+.lessoninner ul li{
+	line-height: 2;
+}
+/* 料金違うクラスの注意書き */
+.lessoninner ul li span{
+	color: #ff0000;
+}
+
+/* 対象年齢 */
+.sebject{
+	background: rgba(223,217,77,0.7);
+	padding: 60px 0;
+	margin-top: 100px;
+}
+.sebject .inner{
+	background: #fff;
+	padding: 40px 1%;
+    text-align: center;
+}
+
+/* price area */
+.pricebox{
+	margin-top: 100px;
+}
+table {
+	width:100%;
+	margin-bottom:30px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse:collapse;
+	border-collapse: separate; border-spacing: 0;
+	background: #fff;
+}
+table th,
+table td{
+	line-height: 2;
+	width: 50%;
+}
+.priceinner1,
+.priceinner2{
+	margin-top: 60px;
+}
+
+.priceinner2 table th{
+	background: rgba(223,217,77,0.7);
+	width: 50%;
+}
+.caution{
+    color: red;
+} 
+
+
+/*599px以下になったら表示が切り替わる*/
+@media screen and (max-width: 599px){
+
+	table span{
+		display: block;
+	}
+
+	.lessoninner{
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+	}
+	
+	.lessoninner ul li{
+		font-size: 87.5%;
+	}
+	
+}
