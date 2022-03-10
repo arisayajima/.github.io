@@ -150,14 +150,16 @@ h2 span{
 	box-sizing: border-box;
 	position: relative;
 }
+
+/* 枠線 */
 .aboutText:before {
 	position: absolute;
-    bottom: -14px;
-    right: -14px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #dddbcb;
-    content: '';
+   	bottom: -10px;
+    	right: -10px;
+    	width: 100%;
+   	 height: 100%;
+    	border: 2px solid #dddbcb;
+    	content: '';
 }
 .aboutTextInner:before,.aboutTextInner:after{
     content: '';
@@ -165,6 +167,8 @@ h2 span{
 	width: 40px;
 	height: 40px;
 }
+
+/* "の装飾 */
 .aboutTextInner:before {
 	background: url("../images/top/brackets_01.png") no-repeat ;
 	background-size: 100%;
@@ -346,6 +350,7 @@ h2 span{
 	.aboutBoxInner .spon{
 		display: block;
 		text-align: center;
+		padding-left: 10px;
 	}
 	.aboutTtlWrap {
 		padding-left: 0;
