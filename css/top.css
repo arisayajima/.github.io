@@ -188,6 +188,9 @@ h2 span{
 .textRight{
 	text-align: right;
 }
+
+/* infomation area */
+
 .info{
 	display: flex;
 	margin-top: 100px;
@@ -224,6 +227,8 @@ h2 span{
 	opacity: 0.8;
 	transition: 0.3s;
 }
+
+/* event area*/
 
 .event{
 	background: rgba(223,217,77,0.7);
