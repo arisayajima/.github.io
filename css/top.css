@@ -213,15 +213,15 @@ h2 span{
 	transition: 0.3s;
 }
 
-.info p img{
+.info img{
 	box-shadow: 5px 5px #1e433c;
 }
 .infoBox:first-child{
 	padding-right: 1%;
 }
 
-.info a:hover{
-	opacity: 0.7;
+.info a:hover img{
+	opacity: 0.8;
 	transition: 0.3s;
 }
 
